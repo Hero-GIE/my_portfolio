@@ -3,17 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frank Osei Adams Gyem | Full-Stack Developer</title>
+    <title>Frank Adams | Full-Stack Developer</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -22,7 +20,7 @@
     <header>
       <div class="container">
         <nav>
-          <div class="logo">AC</div>
+          <div class="logo">FOAG</div>
           <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -40,19 +38,25 @@
     </header>
 
     <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-bg-image"></div>
       <div class="container">
         <div class="hero-content">
-          <h1 class="hero-title">
-            Hi, I'm <span>Frank Osei Owusu Adams Gyem</span>
-          </h1>
-          <h2 class="hero-subtitle">Full-Stack Software Engineer</h2>
+          <h4 class="hero-pre-title">Full-Stack Developer</h4>
+          <h1 class="hero-title">Hi, I'm <span>Frank Adams</span></h1>
           <p class="hero-description">
-            I build exceptional digital experiences with modern web
-            technologies.
+            I craft high-performing digital experiences with modern web
+            technologies, focused on clean code and intuitive design.
           </p>
           <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">View My Work</a>
-            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Contact Me</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
           </div>
         </div>
         <div class="hero-image">
@@ -63,19 +67,28 @@
               class="profile-img"
             />
             <div class="tech-icons">
-              <i class="fab fa-js"></i>
-              <i class="fab fa-angular"></i>
-              <i class="fab fa-react"></i>
-              <i class="fab fa-node-js"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-angular" title="Angular"></i>
+              <i class="fab fa-react" title="React"></i>
+              <i class="fab fa-node-js" title="Node.js"></i>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll Down</span>
+        <div class="mouse">
+          <div class="wheel"></div>
         </div>
       </div>
     </section>
 
     <section id="about" class="about">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
+        <div class="section-header">
+          <h5 class="section-subtitle">Get To Know Me</h5>
+          <h2 class="section-title">About Me</h2>
+        </div>
         <div class="about-content">
           <div class="about-text">
             <p>
@@ -95,7 +108,7 @@
             </p>
             <div class="experience">
               <div class="exp-item">
-                <h3>4+</h3>
+                <h3>5+</h3>
                 <p>Years Experience</p>
               </div>
               <div class="exp-item">
@@ -109,7 +122,10 @@
             </div>
           </div>
           <div class="about-image">
-            <img src="./images/2.jpg" alt="About Image" />
+            <div class="image-frame">
+              <img src="./images/2.jpg" alt="About Image" />
+              <div class="frame-decoration"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -117,42 +133,58 @@
 
     <section id="skills" class="skills">
       <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-header">
+          <h5 class="section-subtitle">What I Offer</h5>
+          <h2 class="section-title">Technical Skills</h2>
+        </div>
         <div class="skills-container">
           <div class="skill-category">
-            <h3>Frontend</h3>
+            <div class="category-header">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Frontend</h3>
+            </div>
             <div class="skill-items">
               <div class="skill-item">
-                <i class="fab fa-js"></i>
-                <span>JavaScript (ES6+)</span>
+                <div class="skill-info">
+                  <i class="fab fa-js"></i>
+                  <span>JavaScript (ES6+)</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 95%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <i class="fab fa-angular"></i>
-                <span>Angular</span>
+                <div class="skill-info">
+                  <i class="fab fa-angular"></i>
+                  <span>Angular</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 90%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <i class="fab fa-react"></i>
-                <span>React</span>
+                <div class="skill-info">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 85%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <i class="fab fa-vuejs"></i>
-                <span>Vue.js</span>
+                <div class="skill-info">
+                  <i class="fab fa-vuejs"></i>
+                  <span>Vue.js</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 80%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <i class="fas fa-code"></i>
-                <span>TypeScript</span>
+                <div class="skill-info">
+                  <i class="fas fa-code"></i>
+                  <span>TypeScript</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 90%"></div>
                 </div>
@@ -161,39 +193,52 @@
           </div>
 
           <div class="skill-category">
-            <h3>Backend</h3>
+            <div class="category-header">
+              <i class="fas fa-server"></i>
+              <h3>Backend</h3>
+            </div>
             <div class="skill-items">
               <div class="skill-item">
-                <i class="fab fa-node-js"></i>
-                <span>Node.js</span>
+                <div class="skill-info">
+                  <i class="fab fa-node-js"></i>
+                  <span>Node.js</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 90%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <i class="fas fa-server"></i>
-                <span>Express</span>
+                <div class="skill-info">
+                  <i class="fas fa-server"></i>
+                  <span>Express</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 85%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <span>NestJS</span>
+                <div class="skill-info">
+                  <i class="fas fa-database"></i>
+                  <span>NestJS</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 88%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <i class="fas fa-fire"></i>
-                <span>Next.js</span>
+                <div class="skill-info">
+                  <i class="fas fa-fire"></i>
+                  <span>Next.js</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 85%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <i class="fas fa-cloud"></i>
-                <span>Serverless</span>
+                <div class="skill-info">
+                  <i class="fas fa-cloud"></i>
+                  <span>Serverless</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 80%"></div>
                 </div>
@@ -202,39 +247,52 @@
           </div>
 
           <div class="skill-category">
-            <h3>Mobile & Databases</h3>
+            <div class="category-header">
+              <i class="fas fa-mobile-alt"></i>
+              <h3>Mobile & Databases</h3>
+            </div>
             <div class="skill-items">
               <div class="skill-item">
-                <i class="fab fa-android"></i>
-                <span>React Native</span>
+                <div class="skill-info">
+                  <i class="fab fa-android"></i>
+                  <span>React Native</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 85%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <i class="fab fa-apple"></i>
-                <span>Flutter</span>
+                <div class="skill-info">
+                  <i class="fab fa-apple"></i>
+                  <span>Flutter</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 75%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <span>MongoDB</span>
+                <div class="skill-info">
+                  <i class="fas fa-database"></i>
+                  <span>MongoDB</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 90%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <i class="fas fa-table"></i>
-                <span>PostgreSQL</span>
+                <div class="skill-info">
+                  <i class="fas fa-table"></i>
+                  <span>PostgreSQL</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 85%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <span>Firebase</span>
+                <div class="skill-info">
+                  <i class="fas fa-database"></i>
+                  <span>Firebase</span>
+                </div>
                 <div class="skill-bar">
                   <div class="skill-level" style="width: 80%"></div>
                 </div>
@@ -247,18 +305,23 @@
 
     <section id="projects" class="projects">
       <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-header">
+          <h5 class="section-subtitle">My Portfolio</h5>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-image">
               <img src="./images/e.jpg" alt="E-commerce Platform" />
-              <div class="project-links">
-                <a href="#" class="project-link"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
-                <a href="#" class="project-link"
-                  ><i class="fab fa-github"></i
-                ></a>
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" title="Live Demo">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" title="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="project-info">
@@ -278,13 +341,15 @@
           <div class="project-card">
             <div class="project-image">
               <img src="./images/f.jpg" alt="Task Management App" />
-              <div class="project-links">
-                <a href="#" class="project-link"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
-                <a href="#" class="project-link"
-                  ><i class="fab fa-github"></i
-                ></a>
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" title="Live Demo">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" title="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="project-info">
@@ -304,13 +369,15 @@
           <div class="project-card">
             <div class="project-image">
               <img src="./images/fi.jpg" alt="Fitness Mobile App" />
-              <div class="project-links">
-                <a href="#" class="project-link"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
-                <a href="#" class="project-link"
-                  ><i class="fab fa-github"></i
-                ></a>
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" title="Live Demo">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" title="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="project-info">
@@ -330,13 +397,15 @@
           <div class="project-card">
             <div class="project-image">
               <img src="./images/CMS.jpg" alt="CMS Platform" />
-              <div class="project-links">
-                <a href="#" class="project-link"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
-                <a href="#" class="project-link"
-                  ><i class="fab fa-github"></i
-                ></a>
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" title="Live Demo">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" title="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="project-info">
@@ -354,17 +423,23 @@
           </div>
         </div>
         <div class="more-projects">
-          <a href="#" class="btn btn-outline">View All Projects</a>
+          <a href="#" class="btn btn-outline">
+            <span>View All Projects</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
       </div>
     </section>
 
     <section id="contact" class="contact">
       <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-header">
+          <h5 class="section-subtitle">Let's Connect</h5>
+          <h2 class="section-title">Get In Touch</h2>
+        </div>
         <div class="contact-content">
           <div class="contact-info">
-            <h3>Let's work together</h3>
+            <h3>Ready to start your project?</h3>
             <p>
               I'm currently available for freelance work and full-time
               positions. If you have a project that needs my expertise, don't
@@ -372,23 +447,46 @@
             </p>
             <div class="contact-details">
               <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>franklinadams773@gmail..com</span>
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <span>franklinadams773@gmail.com</span>
+                </div>
               </div>
               <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>+233 241 121 593</span>
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <span>+233 241 121 593</span>
+                </div>
               </div>
               <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Accra, Ghana</span>
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Location</h4>
+                  <span>Accra, Ghana</span>
+                </div>
               </div>
             </div>
             <div class="social-links">
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-stack-overflow"></i></a>
+              <a href="#" class="social-link" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-link" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link" title="Stack Overflow">
+                <i class="fab fa-stack-overflow"></i>
+              </a>
             </div>
           </div>
           <form class="contact-form">
@@ -404,7 +502,10 @@
             <div class="form-group">
               <textarea placeholder="Your Message" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="submit" class="btn btn-primary">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
           </form>
         </div>
       </div>
@@ -413,15 +514,39 @@
     <footer>
       <div class="container">
         <div class="footer-content">
-          <div class="footer-logo">AC</div>
-          <p>© 2025 Frank Osei Adams Gyem. All rights reserved.</p>
-          <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+          <div class="footer-info">
+            <div class="footer-logo">FOAG</div>
+            <p>Building digital experiences that make an impact.</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-stack-overflow"></i></a>
+            </div>
           </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Subscribe to my newsletter for the latest updates.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your Email" required />
+              <button type="submit">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Frank Adams. All rights reserved.</p>
         </div>
       </div>
     </footer>
